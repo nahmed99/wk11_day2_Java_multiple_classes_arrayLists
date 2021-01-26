@@ -18,4 +18,12 @@ public class RiverTest {
         river.addFish(salmon);
         assertEquals(1, river.fishCount());
     }
+
+    @Test
+    public void canRemoveSalmon() {
+        river.addFish(salmon);
+        Salmon removedFish = river.removeFish();
+        assertEquals(salmon, removedFish); // the removed fish should be the same as that that was added...
+        assertEquals(0, river.fishCount());
+    }
 }

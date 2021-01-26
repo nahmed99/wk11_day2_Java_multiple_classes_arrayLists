@@ -21,4 +21,9 @@ public class Bear {
     public void sleep() {
         belly.clear();
     }
+
+    public void eatFishFromRiver(River river) {
+        Salmon removedFish = river.removeFish();
+        belly.add(removedFish);
+    }
 }

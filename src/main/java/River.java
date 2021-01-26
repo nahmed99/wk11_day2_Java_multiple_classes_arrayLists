@@ -2,7 +2,6 @@ import java.util.ArrayList;
 
 public class River {
 
-
     // has a
     private ArrayList<Salmon> fish;
 
@@ -16,5 +15,9 @@ public class River {
 
     public int fishCount() {
         return fish.size();
+    }
+
+    public Salmon removeFish() {
+        return fish.remove(0);
     }
 }
