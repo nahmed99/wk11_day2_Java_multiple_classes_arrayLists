@@ -17,7 +17,7 @@ public class Bear {
     public void eat(Salmon salmon) {
         belly.add(salmon);
     }
-    
+
     public void sleep() {
         belly.clear();
     }
